@@ -6,6 +6,7 @@ gem 'mysql2'
 gem 'bootstrap-sass'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+gem 'simple_form'
 
 gem 'figaro'
 gem 'curb'
@@ -14,6 +15,10 @@ gem 'curb'
 gem 'colorize'
 # add crontab support
 gem 'whenever'
+
+gem 'devise'
+gem 'cancan'
+gem 'rolify'
 
 
 group :assets do
@@ -34,6 +39,8 @@ group :test do
   gem 'capybara', '1.1.2'
   gem 'sqlite3'
 	gem 'factory_girl_rails'
+	gem "email_spec"
+	gem "database_cleaner"
 end
 
 group :development do
@@ -41,6 +48,7 @@ group :development do
 	gem "binding_of_caller"
 	gem 'annotate'
 	gem 'debugger'
+	gem 'quiet_assets'
 end
 
 group :development, :test do
